@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Author" content="Tina Sivec" />
+    <meta name="Author" content="Antun Nakic" />
     <meta name="keywords" content="HTML, schools, Algebra" />
     <meta
       name="description"
@@ -23,11 +22,17 @@
     <title>Document</title>
   </head>
   <body style="font-family: 'Noto Sans', sans-serif">
-    <a href="./index.html">Vrati se na početnu</a>
+    <a href="./index.html" target="_parent"
+      >Vrati se na početnu (PARENT FRAME)</a
+    >
+    |
+    <a href="./index.html" target="_top">Vrati se na početnu (TOP FRAME)</a>
     <!-- Naslovi -->
     <h1>Najveci naslov</h1>
     <h3>Naslov razine 3</h3>
     <h6>Naslov razine 6</h6>
+
+    <iframe src="./pred1.html" width="300" width="150"></iframe>
 
     <!-- Paragraf -->
     <p>
@@ -37,10 +42,9 @@
 
     <!-- Preformatirani tekst -->
     <pre>
-        DObar dan.
-        Ja sam novi red sa                      razmakom
-      </pre
-    >
+      DObar dan.
+      Ja sam novi red sa                      razmakom
+    </pre>
 
     <!-- Elementi za oblikovanje teksta -->
     <b>Lorem ipsum dolor</b>
@@ -108,34 +112,10 @@
         </tr>
       </tbody>
       <tfoot>
-        <td colspan="3">Footer</td>
+        <tr>
+          <td colspan="3">Footer</td>
+        </tr>
       </tfoot>
-    </table>
-
-    <table border="2" style="width: 400px; height: 400px">
-      <colgroup>
-        <col style="background-color: aqua" />
-        <col spawn="2" style="background-color: lightgreen" />
-        <col spawn="3" style="background-color: lightgreen" />
-        <col spawn="3" style="background-color: rgb(189, 23, 23)" />
-      </colgroup>
-      <tr>
-        <td rowspan="2"></td>
-        <td></td>
-        <td></td>
-        <td rowspan="4"></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td rowspan="3"></td>
-      </tr>
-      <tr>
-        <td colspan="2"></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-      </tr>
     </table>
   </body>
 </html>
