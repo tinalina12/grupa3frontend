@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      .flex-container {
+        display: flex;
+        margin-bottom: 10px;
+      }
+
+      .flex-container > div {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+      .logo {
+        background-color: rgb(170, 190, 255);
+        width: 50%;
+        font-size: 20px;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+      .slika {
+        background-color: rgb(170, 190, 255);
+        flex-basis: 100%;
+        width: 50%;
+        font-size: 20px;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+      .menu {
+        display: flex;
+        justify-content: center;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      .item-menu {
+        background-color: green;
+        width: 60%;
+        height: 20px;
+        font-size: 20px;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+
+      .flex-container2 {
+        display: flex;
+        margin-top: 0px;
+        justify-content: center;
+      }
+
+      .flex-container2 > div {
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 20px;
+      }
+
+      .aside {
+        background-color: blue;
+        width: 20%;
+        height: 200px;
+        line-height: 380px;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+      .Main {
+        background-color: orange;
+        font-size: 20px;
+        width: 60%;
+        height: 200px;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+      .Aside2 {
+        background-color: red;
+        width: 20%;
+        height: 200px;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="logo">Logo</div>
+      <div class="slika">Slika</div>
+    </div>
+    <div class="menu">
+      <div class="item-menu">Menu</div>
+    </div>
+
+    <div class="flex-container2">
+      <div class="aside">Aside</div>
+      <div class="Main">Main</div>
+      <div class="Aside2">Aside2</div>
+    </div>
+  </body>
+</html>

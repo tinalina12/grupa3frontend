@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      .flex-container {
+        display: flex;
+        height: 500px;
+        flex-wrap: wrap;
+      }
+
+      .flex-container > div {
+        background-color: rgb(119, 135, 187);
+        border: solid 5px rgb(59, 89, 187);
+        border-radius: 12px;
+        color: white;
+        width: 550px;
+        line-height: 60px;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div>I am small</div>
+      <div>I have more content than the very small item.</div>
+      <div>
+        I have lots of content. <br />So much content that I don't know where it
+        is all going to go. I'm glad that CSS i spretty good at dealing with
+        situations where we end up with more words than expected!
+      </div>
+    </div>
+  </body>
+</html>
