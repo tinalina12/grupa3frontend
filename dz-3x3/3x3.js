@@ -1,38 +1,30 @@
-var showHideCell = document.querySelectorAll('.cell');
-var onClick = document.querySelectorAll('.cell');
+var showHideBtn=document.querySelectorAll('.btn');
+var click=document.querySelectorAll('.btn');
 
-//Funkcije
-
-function handleHide(e) {
-    var element = e.target;
-    element.classList.toggle('cell');
+function handleShowBtn(e) {
+  var element=e.target;
+  element.classList.toggle('btn');
+}
+function handleHideBtn(e){
+  var element=e.target;
+  element.classList.toggle('btn');
+}
+function handleClickBtn(e){
+  var element=e.target;
+  element.classList.toggle('click');
 }
 
-function handleShow(e) {
-    var element = e.target;
-    element.classList.toggle('cell');
+for (var i=0; i< showHideBtn.length; i++) {
+  var btnHide= showHideBtn [i];
+     btnHide.addEventListener('mouseover', handleHideBtn);
 }
 
-function handleClick(e) {
-    var element = e.target;
-    element.classList.toggle('on-click');
+for (var i=0; i< showHideBtn.length; i++) {
+  var btnShow= showHideBtn [i];
+     btnShow.addEventListener('mouseout', handleShowBtn);
 }
 
-
-
-//Petlje
-
-for (var i = 0; i < showHideCell.length; i++) {
-    var cellHide = showHideCell[i];
-    cellHide.addEventListener('mouseover', handleHide);
-}
-
-for (var i = 0; i < showHideCell.length; i++) {
-    var cellShow = showHideCell[i];
-    cellShow.addEventListener('mouseout', handleShow);
-}
-
-for (var i = 0; i < showHideCell.length; i++) {
-    var cellClick = showHideCell[i];
-    cellClick.addEventListener('click', handleClick);
+for (var i=0; i<showHideBtn.length; i++) {
+  var btnClick= showHideBtn [i];
+     btnClick.addEventListener('click', handleClickBtn);
 }
