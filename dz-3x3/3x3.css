@@ -1,0 +1,21 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 90px 90px 90px;
+  grid-template-rows: 90px 90px 90px;
+  gap: 1px;
+  padding: 8px;
+  justify-content: center;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: red;
+  cursor: pointer;
+}
+
+.click {
+  display: block;
+  background: red;
+}
